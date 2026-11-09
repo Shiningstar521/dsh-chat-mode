@@ -1,0 +1,5 @@
+# dsh-chat-mode: one Host row. The browser half ships through package.json
+# `dsh.client` and exports["./client"], discovered by the Client modules scan.
+- insert:
+    - id: chat-mode
+      name: 'dsh-chat-mode'

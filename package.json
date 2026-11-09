@@ -1,0 +1,46 @@
+{
+  "name": "dsh-chat-mode",
+  "version": "1.0.0",
+  "description": "Chat / work mode switch: new conversations start in chat mode with no tools, work mode keeps the conversation's workspace",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "chat-mode",
+    "work-mode"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "locale/*.json",
+    "icon.svg",
+    "assets/*.png",
+    "test/*.mjs"
+  ],
+  "scripts": {
+    "test": "node test/chat-mode.test.mjs"
+  },
+  "dependencies": {
+    "zod": "4.4.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

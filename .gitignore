@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# npm
+.npm-cache/
+npm-debug.log*
+package-lock.json
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local build output
+dist/
+*.tgz

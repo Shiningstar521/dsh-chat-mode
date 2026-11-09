@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Chat / work mode",
+    "description": "Adds a chat / work switch to every conversation; new conversations start in chat mode. Chat mode is conversation only — the model gets no tools and cannot touch the computer, earlier tool records are declared stale, while uploaded files and images still work. Switching to work mode never asks for a directory: the conversation keeps its current workspace, and /work <directory> changes it explicitly."
+  }
+}
